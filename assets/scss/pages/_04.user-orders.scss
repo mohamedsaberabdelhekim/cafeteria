@@ -1,0 +1,35 @@
+.my-orders {
+  .user-orders {
+    table {
+      border: 1px solid #ccc;
+      td,
+      th {
+        vertical-align: unset;
+        border: 1px solid #ccc;
+      }
+    }
+    .order {
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      i {
+        transition: all 0.2s ease-in-out;
+      }
+      > td > i {
+        float: right;
+      }
+      &:hover {
+        @extend .custom-shadow;
+        > td > i {
+          color: #f00;
+        }
+      }
+      & + tr {
+        display: none;
+      }
+    }
+    .total-price {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}

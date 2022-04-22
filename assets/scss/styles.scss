@@ -1,0 +1,15 @@
+//* variables
+@import "./variables/variables.scss";
+//* global
+@import "./pages/global.scss";
+//* pages
+@import "./pages/_01.login.scss";
+@import "./pages/_02.user.scss";
+@import "./pages/_03.admin.scss";
+@import "./pages/_04.user-orders.scss";
+@import "./pages/_05.all-products.scss";
+@import "./pages/_06.all-users.scss";
+@import "./pages/_07.add-user.scss";
+@import "./pages/_08.add-product.scss";
+@import "./pages/_09.checks.scss";
+@import "./pages/_10.admin-orders.scss";

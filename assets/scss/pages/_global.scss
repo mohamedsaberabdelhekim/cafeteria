@@ -1,0 +1,82 @@
+body {
+  background-color: #f3f4f7;
+}
+
+header {
+  position: fixed;
+  @extend .w-100;
+  top: 0;
+  box-shadow: 0 0 8px 3px #ccc;
+  z-index: 9;
+}
+
+table {
+  border: 1px solid #ccc;
+  td,
+  th {
+    vertical-align: unset;
+    border: 1px solid #ccc;
+  }
+}
+
+.custom-shadow {
+  box-shadow: 0 0 8px 3px #ccc;
+}
+
+.main-padding {
+  padding: 40px 0;
+  &:first-of-type {
+    margin-top: 66px;
+  }
+  > div.container > h1 {
+    margin-bottom: 40px;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.add-product,
+.add-user {
+  [class*="col-"] {
+    align-self: baseline;
+  }
+}
+
+// .all-products // .user-checks .user+tr {
+.each-order {
+  position: relative;
+  text-align: center;
+  margin-bottom: 25px;
+  h5 {
+    // text-align: center;
+    margin: 10px 0;
+  }
+  span {
+    &:first-of-type {
+      border: 1px solid #000;
+      border-radius: 100%;
+      padding: 8px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 15px;
+      transform: translate(20%, -50%);
+      background-color: #fff;
+    }
+  }
+  .user-checks &,
+  .user-orders &,
+  .admin-orders & {
+    margin-top: 30px;
+  }
+}

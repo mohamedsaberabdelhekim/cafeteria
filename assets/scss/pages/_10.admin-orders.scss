@@ -1,0 +1,26 @@
+.admin-orders {
+  .order {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    i {
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      @extend .custom-shadow;
+      > td > i {
+        transition: all 0.2s ease-in-out;
+        color: #f00;
+      }
+    }
+    & + tr {
+      display: none;
+    }
+  }
+  .order-total-price {
+    align-self: flex-end;
+    text-align: right;
+    p {
+      font-size: 25px;
+    }
+  }
+}
